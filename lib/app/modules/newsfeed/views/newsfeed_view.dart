@@ -25,10 +25,26 @@ class NewsfeedView extends GetView<NewsfeedController> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            const TextField(
-              // controller: ageController,
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Edad'),
+            DropdownButtonFormField(
+              value: "20-35",
+              onChanged: (value) {
+                // gender = value.toString();
+              },
+              items: [
+                '0-10',
+                '10-20',
+                '20-35',
+                '35-50',
+                '50-65',
+                '65-80',
+                '80+'
+              ].map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
+              decoration: const InputDecoration(labelText: 'Rango de Edad'),
             ),
             const SizedBox(height: 16.0),
             DropdownButtonFormField(
