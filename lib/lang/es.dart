@@ -1,0 +1,18 @@
+const Map<String, String> es = {
+  'covid': 'Corona Vírus',
+  'total_confirmed': 'Total confirmado',
+  'total_deaths': 'Total de mortes',
+  'fetch_country': 'Listar por país',
+  'corona_by_country': 'Corona por país',
+  'total_infecteds': 'Total de infectados',
+  'details': 'Detalhes',
+  'total_recovered': 'Total de recuperados',
+  'about_the_app': 'Sobre la App',
+  'ai_tab_title': 'CardioTunes',
+  'timeline_tab_title': 'Línea de tiempo',
+  'events_tab_title': 'Eventos',
+  'notifications_tab_title': 'Notificaciones',
+  'profile_tab_title': 'Perfil',
+  'slogan': '¡Tu compañero de ritmo personal!',
+  'support_us': 'Apóyanos',
+};

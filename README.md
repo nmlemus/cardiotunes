@@ -1,4 +1,4 @@
-CardioTunes, your personal rhythm companion!
+# CardioTunes, your personal rhythm companion!
 
 🎶 Experience the magic of music like never before with our cutting-edge app that syncs seamlessly with your heartbeat. Whether you're on a run, relaxing at home, or in the middle of a workout, [App Name] adapts the soundtrack of your life to your heart's beat.
 
