@@ -58,7 +58,7 @@ class _ProfileState extends State<ProfileView> {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: CachedNetworkImageProvider(
-                        'https://media.istockphoto.com/id/1364859722/photo/artificial-intelligence-concept.jpg?b=1&s=170667a&w=0&k=20&c=eHRkMLmlR79tWkAuR0_eJCerG4xNP7iPMgjqE3mzbZU='),
+                        'https://github.com/nmlemus/cardiotunes/blob/main/assets/play_store_512.png?raw=true'),
                   ),
                 ),
               ),
@@ -98,7 +98,7 @@ class _ProfileState extends State<ProfileView> {
                   },
                   child: const Text('https://cardiotunes.com/')),
               const SizedBox(height: 15),
-              Text(
+              /*Text(
                 'support_us'.tr,
                 textAlign: TextAlign.center,
               ),
@@ -111,6 +111,16 @@ class _ProfileState extends State<ProfileView> {
                 //Allows custom styling
                 style: ButtonStyle(
                     fixedSize: MaterialStatePropertyAll(Size(250, 60))),
+              ),*/
+              Text(
+                'Autores',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                '\n Juan David López\n Leandro Moreno Zarza\n María Fernanda Briceño\n Armando Escudero\n Carolina Rojas \n\n Grado: XI A',
+                style: TextStyle(fontSize: 18),
+                textAlign: TextAlign.center,
               ),
             ],
           ),
