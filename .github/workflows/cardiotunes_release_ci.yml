@@ -36,5 +36,5 @@ jobs:
       - name: Upload APK Release - ${{ env.repository_name }}
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.date_today }} - ${{ env.playstore_name }} - ${{ env.repository_name }} - APK(s) release generated
+          name: app-release.apk
           path: ${{ env.main_project_module }}/build/app/outputs/flutter-apk/
