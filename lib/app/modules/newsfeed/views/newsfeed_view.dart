@@ -9,6 +9,10 @@ class NewsfeedView extends GetView<NewsfeedController> {
 
   @override
   Widget build(BuildContext context) {
+    String ageRange = "20-35";
+    String gender = "Masculino";
+    bool isExercising = true;
+
     return Scaffold(
       backgroundColor: Colors.blueGrey.shade50,
       appBar: AppBar(
@@ -28,7 +32,7 @@ class NewsfeedView extends GetView<NewsfeedController> {
             DropdownButtonFormField(
               value: "20-35",
               onChanged: (value) {
-                // gender = value.toString();
+                ageRange = value.toString();
               },
               items: [
                 '0-10',
@@ -50,7 +54,7 @@ class NewsfeedView extends GetView<NewsfeedController> {
             DropdownButtonFormField(
               value: "Masculino",
               onChanged: (value) {
-                // gender = value.toString();
+                gender = value.toString();
               },
               items: ['Masculino', 'Femenino', 'Otro']
                   .map<DropdownMenuItem<String>>((String value) {
@@ -68,9 +72,7 @@ class NewsfeedView extends GetView<NewsfeedController> {
                 Checkbox(
                   value: true,
                   onChanged: (value) {
-                    //setState(() {
-                    //  isExercising = value ?? false;
-                    //});
+                    isExercising = value ?? false;
                   },
                 ),
               ],
@@ -85,12 +87,11 @@ class NewsfeedView extends GetView<NewsfeedController> {
             ElevatedButton(
               onPressed: () {
                 // Aquí puedes enviar la información al servidor
-                final edad = 15;
                 final ritmoCardiaco = 80;
-                final informacion = {
-                  'Edad': edad,
-                  'Sexo': "Male",
-                  'Ejercicio': 'Sí',
+                var informacion = {
+                  'Edad': ageRange,
+                  'Sexo': gender,
+                  'Ejercicio': isExercising,
                   'Ritmo Cardiaco': ritmoCardiaco,
                 };
 
@@ -99,7 +100,7 @@ class NewsfeedView extends GetView<NewsfeedController> {
                 // Mostrar un mensaje de éxito
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
-                    content: Text('Información enviada con éxito'),
+                    content: Text('Información enviada con éxito $informacion'),
                   ),
                 );
               },
