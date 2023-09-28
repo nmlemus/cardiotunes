@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:CardioTunes/app/modules/events/views/events_view.dart';
 import 'package:CardioTunes/app/modules/newsfeed/views/newsfeed_view.dart';
+import 'package:CardioTunes/app/modules/newsfeed/views/flights_page.dart';
 import 'package:CardioTunes/app/modules/notifications/views/notifications_view.dart';
 import 'package:CardioTunes/app/modules/profile/views/profile_view.dart';
 import 'package:badges/badges.dart' as badges;
