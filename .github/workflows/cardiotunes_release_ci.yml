@@ -1,5 +1,5 @@
 # Creates and publishes a new release build based on the created release tag.
-name: YoMap Release
+name: CardioTunes Release
 
 on:
   push:
