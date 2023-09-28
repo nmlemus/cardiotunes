@@ -18,7 +18,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     const listRoute = [
-      NewsfeedView(),
+      FlightsPage(),
       TimelineView(),
       EventsView(),
       NotificationsView(),
