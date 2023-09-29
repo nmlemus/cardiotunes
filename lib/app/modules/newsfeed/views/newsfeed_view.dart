@@ -100,7 +100,7 @@ class NewsfeedView extends GetView<NewsfeedController> {
                 // Mostrar un mensaje de éxito
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
-                    content: Text('Información enviada con éxito $informacion'),
+                    content: Text('Información enviada con éxito'),
                   ),
                 );
               },
